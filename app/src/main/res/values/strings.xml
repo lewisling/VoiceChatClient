@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Activity -->
+    <string name="app_name">Chat Client</string>
+    <string name="main_title">Welcome To Chat Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_user">New User? Click Here To Register</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="forgetpassword">Forget Password? Click Here</string>
+    <string name="credit">Translate Cooperation (C) 2015</string>
+    <string name="server">Server Status</string>
+    <string name="contact_us">Contact Us</string>
+    <!-- End Of Main Activity -->
+
+
+
+    <!-- New User Registration Activity -->
+    <string name="title_activity_new_user">New User Registration</string>
+    <string name="newUserActivityTitle">New User Registration</string>
+    <string name="newUserActivityEmail">Email:</string>
+    <string name="newUserActivityPassword">Password</string>
+    <string name="newUserActivityNickName">Nick Name</string>
+    <string name="newUserActivityFirstName">First Name</string>
+    <string name="newUserActivityLastName">Last Name</string>
+    <string name="newUserActivityPhone">Phone</string>
+    <string name="newUserActivityAge">Age</string>
+    <string name="newUserActivityLang">Language</string>
+    <!-- End Of New User Registration Activity -->
+
+
+    <!-- Forget Password Activity -->
+    <string name="title_activity_forget_password">Forget Password</string>
+    <string name="forget_password_title">Forget Password</string>
+    <!-- End Of Forget Password Activity -->
+
+    <!-- Main Chat Activity -->
+    <string name="title_activity_main_chat">Main Chat Activity</string>
+    <string name="title_activity_chat_room">ChatRoomActivity</string>
+    <string name="Disconnect">Disconnect</string>
+    <string name="TransApp">TransApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="Guest">Connect as Guest</string>
+    <string name="title_activity_trans_app">TransApp</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_setting">settingActivity</string>
+    <string name="title_activity_update_users_admin">updateUsersAdmin</string>
+    <!-- End Of Main Chat Activity -->
+    <!--Update User Strig-->
+    <string name="PermissionUpdateUser">Permission:</string>
+    <!-- End Of Update User  Activity -->
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="devices">
+        <item>Window1</item>
+        <item>Window2</item>
+        <item>Window3</item>
+        <item>Window4</item>
+        <item>Window5</item>
+    </string-array>
+    <string-array name="device_description">
+        <item>Connect people abroad</item>
+        <item>Use your native language</item>
+        <item>Learn languages by chat others</item>
+        <item>Quick and simple chat</item>
+        <item>Use TransApp NOW!</item>
+    </string-array>
+</resources>

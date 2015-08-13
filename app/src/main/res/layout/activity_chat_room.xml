@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.user.chatclient.ChatRoomActivity"
+    android:background="@drawable/backgrond">
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar1">
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/trans_app"
+            />
+
+
+        <TextView android:text="@string/TransApp" android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMainChat"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffffff"
+            android:layout_alignBaseline="@+id/icon_image"
+            android:textSize="25dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:shadowColor="@color/ripple_material_light"
+            android:shadowDx="10"
+            android:shadowDy="0"
+            android:shadowRadius="24"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:textStyle="bold"
+            android:singleLine="false"
+
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Edit User"
+            android:id="@+id/editbutton"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+
+            android:visibility="gone"
+            android:layout_below="@+id/icon_image"
+            android:background="@drawable/connect_background_selector"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="log-out"
+            android:id="@+id/logoutBtn"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+
+            android:visibility="gone"
+            android:layout_below="@+id/editbutton"
+            android:background="@drawable/connect_background_selector"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:id="@+id/chatinfoRelative"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView android:text="My self" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewMySelf" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewFriend"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Friend" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listveiwRelative"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="40dp"
+            android:layout_below="@+id/chatinfoRelative"
+            android:layout_above="@+id/sendRelative">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listViewChat"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/btuSend"
+            android:layout_alignTop="@+id/txtSendMes"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBaseline="@+id/txtSendMes"
+            android:background="@drawable/connect_background_selector"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSendMes"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/btuSend"
+            android:background="@drawable/textbox"/>
+
+
+
+
+
+
+</RelativeLayout>

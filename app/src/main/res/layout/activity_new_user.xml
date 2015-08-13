@@ -1,0 +1,294 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.user.chatclient.NewUserActivity">
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar1">
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/trans_app"
+            />
+
+
+        <TextView android:text="@string/TransApp" android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/TANewUserReg"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffffff"
+            android:layout_alignBaseline="@+id/icon_image"
+            android:textSize="25dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:shadowColor="@color/ripple_material_light"
+            android:shadowDx="10"
+            android:shadowDy="0"
+            android:shadowRadius="24"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:textStyle="bold"
+            android:singleLine="false"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:id="@+id/NUserTitle"
+        >
+        <TextView android:text="@string/newUserActivityTitle"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:shadowRadius="1"
+            android:shadowDy="2"
+            android:shadowColor="@color/ripple_material_light"
+            android:shadowDx="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NUserTitle"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        >
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:id="@+id/txtFEmail"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp" />
+
+        <TextView
+            android:text="@string/newUserActivityEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtEmail"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_alignTop="@+id/txtFEmail"
+            android:layout_alignLeft="@+id/txtPassword"
+            android:layout_alignStart="@+id/txtPassword"
+            android:layout_alignBaseline="@+id/txtFEmail"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtFPassword"
+            android:layout_below="@+id/txtFEmail"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/txtFEmail"
+            android:layout_alignStart="@+id/txtFEmail"
+            android:maxLength="8" />
+
+        <TextView
+            android:text="@string/newUserActivityPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtPassword"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_alignTop="@+id/txtFPassword"
+            android:layout_alignLeft="@+id/txtNickName"
+            android:layout_alignStart="@+id/txtNickName"
+            android:layout_alignBaseline="@+id/txtFPassword"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtFNickName"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtFPassword"
+            android:layout_alignLeft="@+id/txtFFirstName"
+            android:layout_alignStart="@+id/txtFFirstName"
+            android:maxLength="20" />
+
+        <TextView
+            android:text="@string/newUserActivityNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtNickName"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_above="@+id/txtFFirstName"
+            android:layout_alignBaseline="@+id/txtFNickName"
+            android:layout_toLeftOf="@+id/txtFNickName"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtFFirstName"
+            android:layout_below="@+id/txtFNickName"
+            android:layout_alignLeft="@+id/txtFLastName"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@+id/txtFLastName"
+            android:maxLength="20" />
+
+        <TextView
+            android:text="@string/newUserActivityFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtFirstName"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_above="@+id/txtFPassword"
+            android:layout_alignLeft="@+id/txtPassword"
+            android:layout_alignStart="@+id/txtPassword"
+            android:layout_alignBaseline="@+id/txtFFirstName"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtFLastName"
+            android:layout_below="@+id/txtFFirstName"
+            android:layout_alignLeft="@+id/txtFPhone"
+            android:layout_alignStart="@+id/txtFPhone"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:maxLength="20" />
+
+        <TextView
+            android:text="@string/newUserActivityLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtLastName"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/txtFNickName"
+            android:layout_alignLeft="@+id/txtNickName"
+            android:layout_alignStart="@+id/txtNickName"
+            android:layout_alignBaseline="@+id/txtFLastName"/>
+
+        <TextView
+            android:text="@string/newUserActivityPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtPhone"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_alignBottom="@+id/txtFLastName"
+            android:layout_alignLeft="@+id/txtLastName"
+            android:layout_alignStart="@+id/txtLastName"
+            android:layout_alignBaseline="@+id/txtFPhone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/txtFPhone"
+            android:layout_below="@+id/txtFLastName"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/txtFAge"
+            android:layout_alignStart="@+id/txtFAge" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/txtFAge"
+            android:layout_below="@+id/txtFPhone"
+            android:background="@drawable/textbox"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/txtFEmail"
+            android:layout_alignStart="@+id/txtFEmail"
+            android:maxLength="3" />
+
+        <TextView
+            android:text="@string/newUserActivityAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/txtAge"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_below="@+id/txtFPhone"
+            android:layout_alignLeft="@+id/txtPhone"
+            android:layout_alignStart="@+id/txtPhone"
+            android:layout_alignBaseline="@+id/txtFAge"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:textColor="#ffffffff"
+            android:background="@drawable/connect_background_selector"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myRadioGroup"
+            android:checkedButton="@+id/sound"
+            android:layout_below="@+id/txtFAge"
+            android:layout_alignLeft="@+id/txtFAge"
+            android:layout_alignStart="@+id/txtFAge">
+
+
+        </RadioGroup>
+
+        <TextView
+            android:text="@string/newUserActivityLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:id="@+id/textView5"
+            android:textIsSelectable="false"
+            android:textColor="#ff000000"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/myRadioGroup"
+            android:layout_alignLeft="@+id/txtAge"
+            android:layout_alignStart="@+id/txtAge"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:spinnerMode="dropdown"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignRight="@+id/txtMainChat"
+            android:layout_alignEnd="@+id/txtMainChat"
+            android:layout_toRightOf="@+id/myRadioGroup"
+            android:layout_toEndOf="@+id/myRadioGroup" />
+    </RelativeLayout>
+
+</RelativeLayout>

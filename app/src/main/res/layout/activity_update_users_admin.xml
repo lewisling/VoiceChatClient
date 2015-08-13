@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.chatclient.updateUsersAdmin"
+    android:background="@drawable/backgrond"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    >
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar1"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/trans_app"
+            android:visibility="visible" />
+
+
+        <TextView android:text="@string/TransApp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TANewUserReg"
+            android:layout_alignParentTop="true"
+            android:textColor="#ffffffff"
+            android:layout_alignBaseline="@+id/icon_image"
+            android:textSize="25dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"
+            android:shadowColor="@color/ripple_material_light"
+            android:shadowDx="10"
+            android:shadowDy="0"
+            android:shadowRadius="24"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:visibility="visible" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:id="@+id/listLayout"
+        >
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerUsers"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/btnUpdateUser"
+            android:background="@drawable/connect_background_selector"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+</RelativeLayout>

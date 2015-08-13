@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.example.user.chatclient.TransApp$PlaceholderFragment"
+    android:id="@+id/TransAppRelative">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/btnSignIn"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:background="@drawable/connect_background_selector"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Join Now"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/join_now_background_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        android:id="@+id/btnJoin" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView6"
+        android:textColor="#ffffffff"
+        android:textSize="25dp"
+        android:shadowDx="10"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="0dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:id="@+id/startimageView"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
