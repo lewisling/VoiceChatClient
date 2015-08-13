@@ -295,7 +295,7 @@ public class MainActivity extends BaseActivity {
         startActivity(Intent.createChooser(intent, "Send Email"));*/
 
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto","evyatar98@gmail.com", null));
+                "mailto","transapp.ea@gmail.com", null));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Contact From Chat Application");
         startActivity(Intent.createChooser(emailIntent, "Chat Application, Contact Us"));
 
