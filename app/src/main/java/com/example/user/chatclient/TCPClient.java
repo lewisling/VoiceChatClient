@@ -317,7 +317,7 @@ public class TCPClient extends Thread{
                     return msg;
                     //msg =  msg.split(",")[3];//GET_MESSAGE,"+emailUser+","+emailSend+","+translateMsg
             }
-            String x;
+
             catch (IOException e)
             {
                 e.printStackTrace();
